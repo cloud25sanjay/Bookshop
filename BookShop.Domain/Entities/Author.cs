@@ -8,7 +8,7 @@ namespace BookShop.Domain.Entities
 
         public string Bio {get;private set;} = string.Empty;
 
-        public Author() { }
+        private Author() { }
 
         public Author(string name, string bio)
         {

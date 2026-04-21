@@ -66,7 +66,7 @@ public class Book : BaseEntity
         return book;
     }
 
-    // ✅ Correct validation
+    //  Correct validation
     private static void Validate(
         string title,
         Isbn isbn,
@@ -123,7 +123,7 @@ public class Book : BaseEntity
         AverageRating = ((AverageRating * (TotalReviews - 1)) + review.Rating) / TotalReviews;
     }
 
-    // ✅ Fixed UpdateDetails
+    // UpdateDetails
     public void UpdateDetails(string title, string description, Money physicalPrice, Money digitalPrice)
     {
         Validate(title, ISBN, physicalPrice, digitalPrice, StockQuantity, DigitalUrl);
