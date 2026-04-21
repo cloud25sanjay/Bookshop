@@ -1,0 +1,12 @@
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\bin\Debug\net10.0\BookShop.Domain.deps.json
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\bin\Debug\net10.0\BookShop.Domain.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\bin\Debug\net10.0\BookShop.Domain.pdb
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.AssemblyInfo.cs
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.sourcelink.json
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\refint\BookShop.Domain.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\BookShop.Domain.pdb
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Domain\obj\Debug\net10.0\ref\BookShop.Domain.dll

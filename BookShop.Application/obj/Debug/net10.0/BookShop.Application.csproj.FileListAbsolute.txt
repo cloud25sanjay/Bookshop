@@ -1,0 +1,16 @@
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\bin\Debug\net10.0\BookShop.Application.deps.json
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\bin\Debug\net10.0\BookShop.Application.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\bin\Debug\net10.0\BookShop.Application.pdb
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\bin\Debug\net10.0\BookShop.Domain.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\bin\Debug\net10.0\BookShop.Domain.pdb
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.csproj.AssemblyReference.cache
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.AssemblyInfoInputs.cache
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.AssemblyInfo.cs
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.sourcelink.json
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.EA109BD1.Up2Date
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\refint\BookShop.Application.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\BookShop.Application.pdb
+C:\Users\Admin\dotnetcore\BookShop\BookShop.Application\obj\Debug\net10.0\ref\BookShop.Application.dll
