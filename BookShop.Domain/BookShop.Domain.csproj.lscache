@@ -55,11 +55,21 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [sourceFiles]
 Class1.cs
-Entities/Book.cs
+Common/
+ BaseEntity.cs
+ IDomainEvent.cs
+Entities/
+ Author.cs
+ Book.cs
+ Review.cs
+Events/BookCreatedEvent.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  BookShop.Domain.AssemblyInfo.cs
  BookShop.Domain.GlobalUsings.g.cs
+ValueObjects/
+ Isbn.cs
+ Money.cs
 
 [metadataReferences]
 <DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.5/ref/net10.0/
