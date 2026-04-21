@@ -61,6 +61,7 @@ Common/
 Entities/
  Author.cs
  Book.cs
+ Genre.cs
  Review.cs
 Events/BookCreatedEvent.cs
 obj/Debug/net10.0/
