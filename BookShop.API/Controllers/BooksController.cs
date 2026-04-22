@@ -5,6 +5,7 @@ using BookShop.Infrastructure.Persistence;
 using BookShop.Domain.Entities;
 using BookShop.Domain.ValueObjects;
 using BookShop.Application.DTOs.Books;
+using BookShop.Application.Books.DTOs;
 namespace BookShop.API.Controllers;
 
 [ApiController]
@@ -63,6 +64,64 @@ public class BooksController : ControllerBase
         {
             Message = "Book created successfully",
             BookId = book.Id
+        });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetBooks([FromQuery] BookQueryParams query)
+    {
+        var booksQuery = _context.Books
+            .Include(b => b.Author)
+            .Include(b => b.Genre)
+            .AsQueryable();
+
+        // SEARCH (Title / Author)
+        if (!string.IsNullOrWhiteSpace(query.Search))
+        {
+            var search = query.Search.ToLower();
+
+            booksQuery = booksQuery.Where(b =>
+                b.Title.ToLower().Contains(search) ||
+                b.Author.Name.ToLower().Contains(search)
+            );
+        }
+
+        //  FILTER BY GENRE
+        if (query.GenreId.HasValue)
+        {
+            booksQuery = booksQuery.Where(b => b.GenreId == query.GenreId);
+        }
+
+        //  FILTER BY AUTHOR
+        if (query.AuthorId.HasValue)
+        {
+            booksQuery = booksQuery.Where(b => b.AuthorId == query.AuthorId);
+        }
+
+        //  PAGINATION
+        var totalCount = await booksQuery.CountAsync();
+
+        var books = await booksQuery
+            .Skip((query.PageNumber - 1) * query.PageSize)
+            .Take(query.PageSize)
+            .Select(b => new BookResponse
+            {
+                Id = b.Id,
+                Title = b.Title,
+                Author = b.Author.Name,
+                Genre = b.Genre.Name,
+                PhysicalPrice = b.PhysicalPrice.Amount,
+                DigitalPrice = b.DigitalPrice.Amount,
+                Rating = b.AverageRating
+            })
+            .ToListAsync();
+
+        return Ok(new
+        {
+            TotalCount = totalCount,
+            PageNumber = query.PageNumber,
+            PageSize = query.PageSize,
+            Data = books
         });
     }
 }
