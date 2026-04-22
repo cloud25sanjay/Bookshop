@@ -63,6 +63,8 @@ Migrations/
  20260421140948_InitialCreate.Designer.cs
  20260421150817_AddUsersTable.cs
  20260421150817_AddUsersTable.Designer.cs
+ 20260422131048_AddUserToReview.cs
+ 20260422131048_AddUserToReview.Designer.cs
  BookShopDbContextModelSnapshot.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs

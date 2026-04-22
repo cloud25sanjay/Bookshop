@@ -60,6 +60,7 @@ DTOs/Auth/
  LoginRequest.cs
  RegisterRequest.cs
 DTOs/Books/
+ AddReviewRequest.cs
  BookQueryParams.cs
  BookResponse.cs
  CreateBookRequest.cs
