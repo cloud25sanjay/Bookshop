@@ -61,7 +61,11 @@ Common/
 Entities/
  Author.cs
  Book.cs
+ Cart.cs
+ CartItem.cs
  Genre.cs
+ Order.cs
+ OrderItem.cs
  Review.cs
  User.cs
 Events/BookCreatedEvent.cs

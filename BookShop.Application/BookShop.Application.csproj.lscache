@@ -64,6 +64,9 @@ DTOs/Books/
  BookQueryParams.cs
  BookResponse.cs
  CreateBookRequest.cs
+DTOs/Cart/
+ AddToCartRequest.cs
+ UpdateCartRequest.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  BookShop.Application.AssemblyInfo.cs

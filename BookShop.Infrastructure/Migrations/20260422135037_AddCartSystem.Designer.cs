@@ -3,6 +3,7 @@ using System;
 using BookShop.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BookShop.Infrastructure.Migrations
 {
     [DbContext(typeof(BookShopDbContext))]
-    partial class BookShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260422135037_AddCartSystem")]
+    partial class AddCartSystem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -168,58 +171,6 @@ namespace BookShop.Infrastructure.Migrations
                     b.ToTable("Genres");
                 });
 
-            modelBuilder.Entity("BookShop.Domain.Entities.Order", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("TotalAmount")
-                        .HasColumnType("numeric");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("BookShop.Domain.Entities.OrderItem", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("BookId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid?>("OrderId")
-                        .HasColumnType("uuid");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("OrderItems");
-                });
-
             modelBuilder.Entity("BookShop.Domain.Entities.Review", b =>
                 {
                     b.Property<Guid>("Id")
@@ -363,13 +314,6 @@ namespace BookShop.Infrastructure.Migrations
                         .HasForeignKey("CartId");
                 });
 
-            modelBuilder.Entity("BookShop.Domain.Entities.OrderItem", b =>
-                {
-                    b.HasOne("BookShop.Domain.Entities.Order", null)
-                        .WithMany("Items")
-                        .HasForeignKey("OrderId");
-                });
-
             modelBuilder.Entity("BookShop.Domain.Entities.Review", b =>
                 {
                     b.HasOne("BookShop.Domain.Entities.Book", null)
@@ -400,11 +344,6 @@ namespace BookShop.Infrastructure.Migrations
             modelBuilder.Entity("BookShop.Domain.Entities.Genre", b =>
                 {
                     b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("BookShop.Domain.Entities.Order", b =>
-                {
-                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }
