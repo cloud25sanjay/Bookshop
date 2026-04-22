@@ -1,4 +1,4 @@
-namespace BookShop.Application.Auth.DTOs;
+namespace BookShop.Application.DTOs.Auth;
 
 public class LoginRequest
 {

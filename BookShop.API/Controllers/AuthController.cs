@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using BookShop.Domain.Entities;
 using BookShop.Infrastructure.Persistence;
 using BookShop.Infrastructure.Auth;
-using BookShop.Application.Auth.DTOs;
+using BookShop.Application.DTOs.Auth;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookShop.API.Controllers;
