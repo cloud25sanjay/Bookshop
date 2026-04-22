@@ -59,7 +59,10 @@ DTOs/Auth/
  AuthResponse.cs
  LoginRequest.cs
  RegisterRequest.cs
-DTOs/Books/CreateBookRequest.cs
+DTOs/Books/
+ BookQueryParams.cs
+ BookResponse.cs
+ CreateBookRequest.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  BookShop.Application.AssemblyInfo.cs

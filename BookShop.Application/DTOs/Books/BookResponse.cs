@@ -1,0 +1,16 @@
+namespace BookShop.Application.DTOs.Books
+{
+    public class BookResponse
+    {
+        public Guid Id { get; set; }
+
+        public string Title { get; set; } = string.Empty;
+        public string Author { get; set; } = string.Empty;
+        public string Genre { get; set; } = string.Empty;
+
+        public decimal PhysicalPrice { get; set; }
+        public decimal DigitalPrice { get; set; }
+
+        public double Rating { get; set; }
+    }
+}
