@@ -127,3 +127,12 @@ C:\Users\Admin\dotnetcore\BookShop\BookShop.API\obj\Debug\net10.0\refint\BookSho
 C:\Users\Admin\dotnetcore\BookShop\BookShop.API\obj\Debug\net10.0\BookShop.API.pdb
 C:\Users\Admin\dotnetcore\BookShop\BookShop.API\obj\Debug\net10.0\BookShop.API.genruntimeconfig.cache
 C:\Users\Admin\dotnetcore\BookShop\BookShop.API\obj\Debug\net10.0\ref\BookShop.API.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\BCrypt.Net-Next.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\dotnetcore\BookShop\BookShop.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll

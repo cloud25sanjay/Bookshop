@@ -63,6 +63,7 @@ Entities/
  Book.cs
  Genre.cs
  Review.cs
+ User.cs
 Events/BookCreatedEvent.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
